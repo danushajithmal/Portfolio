@@ -8,17 +8,17 @@ function Footer() {
     return (
         <>
             <footer>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-3 col-lg-4 col-md-6">
                             <div>
-                                <img src={Logo} width='150px'/>
+                                <img src={Logo} width='200px'/>
                                 <p class="mb-30 footer-desc">This is my Personal website <br/> Thank you!</p>
                             </div>
                         </div>
                         <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
                             <div class="">
-                                <h4>Quick Link</h4>
+                                <h4>Quick Links</h4>
                                 <ul class="list-unstyled">
                                     <li>
                                         <a href="#" class="text-decoration-none">Home</a>
@@ -37,19 +37,19 @@ function Footer() {
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6">
                             <div>
-                                <h4>Service</h4>
+                                <h4>Services</h4>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="#" class="text-decoration-none">Marketing</a>
+                                        <a href="#" class="text-decoration-none">Software Design</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-decoration-none">Branding</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-decoration-none">Web Design</a>
+                                        <a href="#" class="text-decoration-none">Web design</a>
                                     </li>
                                     <li>
                                         <a href="#" class="text-decoration-none">Graphics Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none">Branding</a>
                                     </li>
                                 </ul>
                             </div>
