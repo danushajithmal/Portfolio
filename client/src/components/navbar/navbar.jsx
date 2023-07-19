@@ -21,10 +21,10 @@ function Navbar() {
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item li-container">
-                                <a class="nav-link" href="">My Experience</a>
+                                <a class="nav-link" href="/experience">My Experience</a>
                             </li>
                             <li class="nav-item li-container">
-                                <a class="nav-link" href="">About</a>
+                                <a class="nav-link" href="/about">About</a>
                             </li>
                             <li class="nav-item li-container">
                                 <a class="nav-link" href="">Contact Me</a>

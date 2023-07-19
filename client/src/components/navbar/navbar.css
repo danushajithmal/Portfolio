@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgb(226, 252, 252);
+    background-color: rgb(165, 253, 253);
 }
 .collapse{
     justify-content: center;
@@ -13,6 +13,6 @@
 }
 
 .li-container:hover, .li-container:active{
-    background-color: rgb(107, 197, 228);
+    background-color: rgb(255, 255, 255);
     font-size: large;
 }

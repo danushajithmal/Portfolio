@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-125%, -50%);
+  color: white;
+  
+}
+
+.greeting {
+  font-size: 120px;
+}
+
+.about-me1{
+  background-color: #ff8c00; 
+  border-radius: 100px; 
+  padding: 50px;
+}
+.projects1{
+  align-items: center;
+}

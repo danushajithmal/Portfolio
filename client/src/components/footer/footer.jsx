@@ -2,72 +2,77 @@ import React from "react";
 import './footer.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import SubscribeForm from "./footermailscript";
 import Logo from '../icons/logo.png'
 
 function Footer() {
+
     return (
         <>
             <footer>
-                <div class="container-fluid">
+                <div className="footer-container-fluid">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div className="col-xl-3 col-lg-4 col-md-6">
                             <div>
-                                <img src={Logo} width='200px'/>
-                                <p class="mb-30 footer-desc">This is my Personal website <br/> Thank you!</p>
+                                <img src={Logo} width='200px' />
+                                <p className="mb-30 footer-desc">This is my Personal website <br /> Thank you!</p>
                             </div>
                         </div>
-                        <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
-                            <div class="">
-                                <h4>Quick Links</h4>
-                                <ul class="list-unstyled">
+                        <div className="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+                            <h4>Quick Links</h4>
+                            <div className="footer-link">
+
+                                <ul className="list-unstyled">
                                     <li>
-                                        <a href="#" class="text-decoration-none">Home</a>
+                                        <a href="#" className="text-decoration-none">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-decoration-none">My Experience</a>
+                                        <a href="#" className="text-decoration-none">My Experience</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-decoration-none">About</a>
+                                        <a href="#" className="text-decoration-none">About</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-decoration-none">Contact Me</a>
+                                        <a href="#" className="text-decoration-none">Contact Me</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                            <div>
-                                <h4>Services</h4>
-                                <ul class="list-unstyled">
+                        <div className="col-xl-3 col-lg-3 col-md-6">
+                            <h4>Services</h4>
+                            <div className="footer-link">
+
+                                <ul className="list-unstyled">
                                     <li>
-                                        <a href="#" class="text-decoration-none">Software Design</a>
+                                        <a href="#" className="text-decoration-none">Software Design</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-decoration-none">Web design</a>
+                                        <a href="#" className="text-decoration-none">Web design</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-decoration-none">Graphics Design</a>
+                                        <a href="#" className="text-decoration-none">Graphics Design</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-decoration-none">Branding</a>
+                                        <a href="#" className="text-decoration-none">Branding</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div className="col-xl-3 col-lg-3 col-md-6">
                             <div>
                                 <h4>Newsletter</h4>
+                                <label className="form-label">Subscribe To Our Newsletter</label>
                                 <div>
-                                    <label for="Newsletter" class="form-label">Subscribe To Our Newsletter</label>
-                                    <input type="text" class="form-control" Placeholder="Enter Your Email"/>
-                                        <button class="btn btn-danger mt-3">Subscribe</button>
+                                    <SubscribeForm/>
                                 </div>
+
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </footer>
+
         </>
     )
 }
