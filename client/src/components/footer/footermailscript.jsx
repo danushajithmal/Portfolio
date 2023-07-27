@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { format } from 'date-fns';
 
 const SubscribeForm = () => {
   const [email, setEmail] = useState('');
@@ -11,9 +12,14 @@ const SubscribeForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const newUser = {email}
+    const formattedDate = format(new Date(), 'yyyy-MM-dd');
 
-    // Make a POST request to the backend server
+    const newUser = {
+      email,
+      date: formattedDate,
+    }
+
+    
     axios.post('http://localhost:5000/email/add', newUser)
       .then((response) => {
         console.log('Email subscribed successfully!');
@@ -27,7 +33,7 @@ const SubscribeForm = () => {
     <div>
       <form onSubmit={handleSubmit}>
         
-        <input type="text" id="email" className="form-control" placeholder="Enter Your Email" required value={email} onChange={handleEmailChange}/>
+        <input type="email" id="email" className="form-control" placeholder="Enter Your Email" required value={email} onChange={handleEmailChange}/>
         <button type="Submit" className="btn btn-danger mt-3">Subscribe</button>
       </form>
     </div>

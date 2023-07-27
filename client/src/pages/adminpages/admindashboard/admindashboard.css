@@ -1,0 +1,11 @@
+.admin-dash-back-image {
+    background-image: url("../../../components/icons/bgimage.jpg");
+    min-height: 650px;
+    margin-top: -5px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    padding: 10px;
+  }

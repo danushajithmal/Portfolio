@@ -1,6 +1,5 @@
 
 import React from "react";
-import Form from '../../components/form/form.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './home.css';
@@ -18,9 +17,6 @@ function Home() {
                         <button className="Hire">Hire me</button>
                     </div>
                 </div>
-            <div className="">
-                <Form/>
-            </div>
 
         </>
     )
